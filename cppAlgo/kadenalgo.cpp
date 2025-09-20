@@ -8,9 +8,7 @@ void kadanealgo(int a[],int n){
         sum = sum + a[i];
         if(sum > max){
             max = sum;
-         
         }
-        cout<<i<<" "<<sum<<" "<<max<<endl;
         if(sum < 0) sum = 0;
     }
     cout<<max;
