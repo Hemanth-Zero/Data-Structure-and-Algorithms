@@ -1,7 +1,49 @@
 // the following code is implemenion of StrassenAlgo 
-// the is some AI generated  so i wrote simple algorithm in textfile with same name 
-//please do find the StraseenAlgorithm.txt file , Thank you
+// the is some AI generated  so i wrote simple algorithm  Thank you
 public class StrassenAlgo {
+    private void algorithm(){
+        /*
+            Step 1 : {
+                if matrix size is not in terms of 2 power add rows n colums filled with zero to make it 2 power
+                row
+            }
+
+            Step 2 :{
+                Divide both the matrix into 4 parts both as 
+                A11 A12         B11 B12
+                A21 A22         B21 B22
+            }
+
+            Step 3 :{
+                Define matrix add funcion 
+                Define Matrix subtratic funcion
+                for multiplicaiton we use recursion
+            }
+
+            Step 4 : {
+                Please kindly use defined function mentioned in step 3 to perform step 4
+                we perform 7 multiplicaiton instead of 8 so it decreases the time complexity
+                7 multiplicaiton as follow
+                P = (A11 + A22)(B11 + B22)
+                Q = B11 ( A21 + A22)
+                R = A11 (B12 - B22 )
+                S = A22 (B21 - B11)
+                T = B22( A12+A11)
+                U = (A21 - A11)(B12 + B11)
+                V = (B21+B22)(A12 - A22)
+
+                C11 = P+S-T+V
+                C12 = R+T
+                C21 = Q+S
+                C22 = P+T-Q+U
+
+                c = [{C11 C12} {C21 C22} ]
+
+                return C 
+            }
+        */
+    }
+
     // Function to add two matrices
     private static int[][] addMatrices(int[][] A, int[][] B) {
         int n = A.length;
