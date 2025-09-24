@@ -23,6 +23,7 @@ public class sorting{
         quicksort(a,pivot+1,e);
     }
     static int partition(int[] a, int s,int e){
+        //use pivot as random to get random qucicksort
         int pivot = s;
         int i = s;
         int j = e;
