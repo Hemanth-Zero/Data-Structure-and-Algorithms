@@ -4,7 +4,7 @@ public class linearTimeSelection {
         /*
             The algorithm for linear time selection is as follows 
             linearTimeSelection(A,k){
-                0. if(|A| < 5) return sort(A,k)
+                0. if(|A| < 5) sort(A)  return A[k] 
                 1. while i < n :
                 2.      chunks[j] = chunks[i to i+5]
                 3.      medi[j] = medians(chunks[j])
@@ -18,7 +18,7 @@ public class linearTimeSelection {
         */
     }
     public void linearTimeSelection(){
-        
+
     }
     public static void main(String[] args){
 
