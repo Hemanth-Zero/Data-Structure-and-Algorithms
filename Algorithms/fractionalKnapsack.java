@@ -15,6 +15,7 @@ public class fractionalKnapsack {
                             Container+= Ratio[i] * capacity
                             capacity = 0; 
                     }
+                    Ratio.remove(i)
                 }
             }
         */

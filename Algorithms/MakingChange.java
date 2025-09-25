@@ -8,7 +8,7 @@ public class MakingChange {
                     for coin in coins:
                         if x - coin >= 0:
                             dp[x] = min(dp[x], 1 + dp[x - coin])
-                return dp[N] if dp[N] != ∞ else -1
+                return dp[N] != ∞ ? dp[N] : -1
         */
     }
 }
