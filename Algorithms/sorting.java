@@ -1,9 +1,16 @@
 public class sorting{
+     public void TimeComplexity(){
+        /*
+        mergesort = 2T(n/2) + O(n/2) = O(n log n)
+        insertionsort = O(n.n)
+        qucicksort = 2T(n/2) + O(n)  = O( n log n)
+        */
+    }
     static void insertionsort(int[] a){
-        for(int i =0;i<a.length;i++){
+        for(int i =0;i<a.length;i++){   //->n
             int key = a[i];
             int j = i-1;
-            while(j>=0 && a[j]>key){
+            while(j>=0 && a[j]>key){    //->n
                 a[j+1] =a[j];
                 j--;
             }
@@ -27,7 +34,7 @@ public class sorting{
         int pivot = s;
         int i = s;
         int j = e;
-        while(i<j){
+        while(i<j){         //->n/2
             while(i<=e && a[pivot]>a[i])i++;
             while(j>=s && a[pivot]< a[j] ) j--;
             if(i< j){
@@ -53,21 +60,20 @@ public class sorting{
         int n2 = e - mid;
         int left[] = new int[n1];
         int right[] = new int[n2];
-        for (int i = 0; i < n1; i++) left[i] = a[s + i];
+        for (int i = 0; i < n1; i++) left[i] = a[s + i];        //->n/2
         for (int j = 0; j < n2; j++) right[j] = a[mid + 1 + j];
         int i = 0, j = 0, k = s;
 
-        while (i < n1 && j < n2) {
+        while (i < n1 && j < n2) {      //->n/2
             if (left[i] <= right[j]) {
                 a[k++] = left[i++];
             } else {
                 a[k++] = right[j++];
             }
         }   
-        while (i < n1) a[k++] = left[i++];
+        while (i < n1) a[k++] = left[i++]; //->n/2
         while (j < n2) a[k++] = right[j++];
     }
-
     public static void main(String[] args){
         int arr[] = {5,6,-5,8,9,14,2,53,1,-2};
         int arr2[] ={5,6,-5,8,9,14,2,53,1,-2};

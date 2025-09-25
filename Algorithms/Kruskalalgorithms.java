@@ -3,11 +3,11 @@ class Kruskalalgorithms {
         /*
             Kruskalalgorithms(G){
                     MST = {}
-                    Let each vertex of G be a set Vi , i = 1,2,3 
+                    Let each vertex of G be a set Vi , i = 1,2,3  ->O(V)
                     G = V1 U V2 U .... Vn
-                    new Hashmap<>() sorting based on edge weights 
+                    new Hashmap<>() sorting based on edge weights  ->  E log E
                     Hashmap.addAll(edges(u,v))
-                    for( edge (u,v) : Hashmap ){
+                    for( edge (u,v) : Hashmap ){ -> E 
                             if( Root(u) != Root(v) )
                             {
                                 Union(u,v)
@@ -15,6 +15,7 @@ class Kruskalalgorithms {
                             }
                     }
             } 
+            Toatl time complexity = O((E+V) log E) ~ O(E log E)
         */
     }
     public void Kruskalalgorithms(){

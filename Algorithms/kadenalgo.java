@@ -1,6 +1,8 @@
 public class kadenalgo{
     /*the following code contains kaden algorithm
     which is used for find max sum subarray in given an array
+
+        Total TimeComplexity = O(n)
     */
    static int kaden_algorithm(int[] input){
         int n = input.length;

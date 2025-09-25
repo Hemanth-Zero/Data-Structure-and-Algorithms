@@ -6,7 +6,7 @@ public class StrassenAlgo {
             Step 1 : {
                 if matrix size is not in terms of 2 power add rows n colums filled with zero to make it 2 power
                 row
-            }
+            } 
 
             Step 2 :{
                 Divide both the matrix into 4 parts both as 
@@ -41,6 +41,8 @@ public class StrassenAlgo {
 
                 return C 
             }
+
+            Total time complexity = 7T(n/4) + O(n . n) = O(n^2.81)
         */
     }
 
