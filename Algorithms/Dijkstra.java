@@ -33,7 +33,6 @@ public class Dijkstra {
 
             while(!pq.isEmpty()){
                 int cur[] = pq.poll();
-                int d = cur[0];
                 int u = cur[1];
 
                 if (visited[u]) continue;
